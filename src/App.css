@@ -1,38 +1,278 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+::before,
+::after,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fas {
+  width: 100%;
+  padding: 8px 0;
+  color: #fff;
+  left: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background: hsl(207, 26%, 17%);
+  overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.head {
+  min-width: 100%;
+  min-height: 15vh;
+  position: relative;
+  background: #2b3743;
+  border: 2px solid #2b3743;
+}
+
+.heading {
+  position: absolute;
+  color: antiquewhite;
+  left: 20px;
+  top: 10px;
+  font-size: 14px;
+}
+
+.switch {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  width: 150px;
+  margin-right: -20px;
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.switcher {
+  position: absolute;
+  width: 50px;
+  height: 22px;
+  right: 25px;
+  top: -5px;
+  border-radius: 16px;
+  padding: 1px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  background-image: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%) 0%,
+    hsl(146, 68%, 55%) 100%
+  );
+}
+
+.inner-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #1d2029;
+  transition: all 300ms ease-in-out;
+}
+
+.switcher.active > .inner-circle {
+  background: hsl(225, 100%, 98%);
+  margin-left: 27px;
+}
+
+.forms {
+  position: relative;
+  width: 90%;
+  min-height: 5vh;
+}
+
+.search {
+  position: absolute;
+  background: #2b3743;
+  border: 2px solid #2b3743;
+  height: 40px;
+  width: 15rem;
+  left: 0;
+  top: 10px;
+  padding-left: 10px;
+}
+
+.search input {
+  /* background-image: url("/css/searchicon.png");
+  background-position: 10px 12px;
+  background-repeat: no-repeat;*/
+  background-color: #2b3743;
+  border: 2px solid #2b3743;
+  color: antiquewhite;
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
+
+.select {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  height: 40px;
+  width: 150px;
+  padding-left: 10px;
+}
+
+.choose {
+  background: #2b3743;
+  border: 2px solid #2b3743;
+  color: antiquewhite;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+}
+
+.holder {
+  position: relative;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  top: 10vh;
+}
+
+.count {
+  text-align: center;
+  margin: 20px;
+  color: antiquewhite;
+}
+
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-basis: 100%;
+  min-height: 80%;
+}
+
+.menu-item {
+  width: 100%;
+  background: #2b3743;
+  margin: 20px;
+  color: antiquewhite;
+}
+
+.menu-item img {
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-basis: 100%;
+  min-height: 100%;
+}
+
+.list-items {
+  width: 100%;
+  background: #2b3743;
+  margin: 20px;
+}
+
+.wrapper {
+  height: 7rem;
+  font-size: 12px;
+  padding: 5px 15px;
+}
+
+.anchor {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+img {
+  height: 100%;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  font-size: 10px;
+  text-align: center;
+  margin: 5px;
+  height: auto;
+  color: antiquewhite;
+}
+
+.footer p {
+  position: absolute;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.mode-text {
+  display: none;
+}
+
+@media only screen and (min-width: 400px) {
+  .head {
+    min-height: 10vh;
   }
-  to {
-    transform: rotate(360deg);
+  .heading {
+    font-size: 24px;
+  }
+
+  .switch {
+    top: 30px;
+    left: 80%;
+    font-size: 12px;
+  }
+
+  .forms {
+    margin: 10px auto;
+    top: 20px;
+  }
+
+  .select {
+    left: 85%;
+    margin-right: 10px;
+    top: 0;
+  }
+
+  .search {
+    left: 0;
+  }
+
+  .holder {
+    min-width: 90%;
+  }
+
+  .item-container {
+    flex-basis: 25%;
+  }
+
+  .menu-item {
+    width: 20%;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+
+  .footer p {
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

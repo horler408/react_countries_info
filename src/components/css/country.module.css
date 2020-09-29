@@ -1,0 +1,166 @@
+.container {
+  width: 100%;
+  min-height: 80vh;
+}
+
+.wrapper {
+  position: relative;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 50vh;
+}
+
+.flag {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  top: 0;
+}
+
+.flag img {
+  width: 100%;
+  height: 100%;
+}
+
+.details {
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  top: 45%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 0.6rem;
+  padding: 20px;
+}
+
+.button {
+  position: relative;
+  top: 10px;
+  left: 30px;
+  width: 100px;
+  height: 30px;
+  box-shadow: 0 1px 3px rgba(31, 30, 30, 0.2);
+  cursor: pointer;
+}
+
+.button button {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  right: 20%;
+  outline: none;
+  color: #fff;
+  background: transparent;
+  border: 0px solid #2b3743;
+}
+
+.details p {
+  margin-bottom: 3px;
+}
+
+.name {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.top {
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.left_section {
+  position: absolute;
+  width: 50%;
+  left: 0;
+}
+
+.right_section {
+  position: absolute;
+  width: 50%;
+  right: 50%;
+  top: 60px;
+}
+
+.bottom {
+  position: relative;
+  top: 95%;
+  width: 100%;
+}
+
+.borders {
+  list-style: none;
+  display: inline;
+}
+
+.border_list {
+  width: 40px;
+  margin: 2px;
+  padding: 2px 5px;
+  font-size: 8px;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.border_title {
+  display: block;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 400px) {
+  .wrapper {
+    top: 70px;
+  }
+  .flag {
+    width: 35%;
+    height: 80%;
+    left: 50px;
+  }
+
+  .details {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    font-size: 12px;
+    right: 5px;
+  }
+
+  .details p {
+    margin-bottom: 5px;
+  }
+
+  .button {
+    left: 50px;
+    top: 50px;
+  }
+
+  .bottom {
+    top: 120px;
+    top: 50%;
+  }
+
+  .right_section {
+    right: 1rem;
+    top: -40px;
+  }
+
+  .border_list {
+    width: 40px;
+    margin: 5px;
+  }
+
+  .border_title {
+    display: inline;
+  }
+}
