@@ -28,7 +28,7 @@ export default function Country({ history, match }) {
       </div>
       <div className={style.wrapper}>
         <div className={style.flag}>
-          <img src={country.flag} loading="lazy" alt="Country Flag" />
+          <img src={country.flag} alt="Country Flag" />
         </div>
         <div className={style.details}>
           <div className={style.name}>

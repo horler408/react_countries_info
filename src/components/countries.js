@@ -14,7 +14,7 @@ const Countries = ({
   return (
     <div className="menu-item">
       <Link to={`/${id}`}>
-        <img src={flag} loading="lazy" alt="Country Flag" className="img" />
+        <img src={flag} alt="Country Flag" className="img" />
       </Link>
 
       <div className="wrapper">
