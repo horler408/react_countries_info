@@ -65,7 +65,7 @@
 
 .name {
   position: relative;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .top {
@@ -94,7 +94,7 @@
 
 .bottom {
   position: relative;
-  top: 95%;
+  top: 100%;
   width: 100%;
 }
 
