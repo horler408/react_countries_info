@@ -13,7 +13,7 @@ const Countries = ({
 }) => {
   return (
     <div className="menu-item">
-      <Link to={`/home/${id}`}>
+      <Link to={`/${id}`}>
         <img src={flag} alt="Country Flag" className="img" />
       </Link>
 
