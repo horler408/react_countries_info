@@ -39,6 +39,7 @@ function Home() {
     let newUrl = `https://restcountries.eu/rest/v2/region/${region}`;
     region !== "" ? setUrl(newUrl) : setUrl(url);
   };
+
   return (
     <div className="container">
       <Forms

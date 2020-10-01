@@ -13,7 +13,7 @@ function App() {
         <Nav />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/:id" component={Country} />
+          <Route path="/country/:id" exact component={Country} />
         </Switch>
         <Footer />
       </div>
