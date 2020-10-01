@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import style from "./css/country.module.css";
 
-export default function Country({ history, match }) {
+function Country({ history, match }) {
   //console.log(match);
   const [country, setCountry] = useState([]);
 
@@ -24,7 +24,7 @@ export default function Country({ history, match }) {
     <div className={style.container}>
       <div className={style.button}>
         <i className="fas fa-arrow-left"></i>
-        <button onClick={() => history.push("/")}>Back</button>
+        <button onClick={() => history.push("/home")}>Back</button>
       </div>
       <div className={style.wrapper}>
         <div className={style.flag}>
@@ -97,3 +97,5 @@ export default function Country({ history, match }) {
     </div>
   );
 }
+
+export default Country;

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-//import style from "./css/navbar.module.css";
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Nav() {
   const [modeText, setModeText] = useState("Dark Mode");
@@ -15,8 +14,9 @@ function Nav() {
 
   return (
     <div className="head">
-      <h2 className="heading">Where in the world ?</h2>
-
+      <Link to='/' className="link">
+        <h2 className="heading">Where in the world ?</h2>
+      </Link>
       <div className="switch" id="mode">
         <div>
           <span id="dark-mode-text">{modeText}</span>
