@@ -13,9 +13,9 @@ function App() {
       <div className="container">
         <Nav />
         <Switch>
-          <Route path="/" exact component={LandingPage} />
-          <Route path="/home" exact component={Home} />
-          <Route path="/:id" exact component={Country} />
+          <Route path="/react_default" exact component={LandingPage} />
+          <Route path="/react_default/home" exact component={Home} />
+          <Route path="/react_default/home/:id" component={Country} />
         </Switch>
         <Footer />
       </div>

@@ -9,7 +9,7 @@ function landingPage({ history }) {
         <div className={style.landing}>
           <button
             className={style.landing__button}
-            onClick={() => history.push("/home")}
+            onClick={() => history.push("/react_default/home")}
           >
             Get started
           </button>

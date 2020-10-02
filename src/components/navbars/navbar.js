@@ -14,7 +14,7 @@ function Nav() {
 
   return (
     <div className="head">
-      <Link to='/' className="link">
+      <Link to="/react_default" className="link">
         <h2 className="heading">Where in the world ?</h2>
       </Link>
       <div className="switch" id="mode">

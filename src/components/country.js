@@ -24,7 +24,9 @@ function Country({ history, match }) {
     <div className={style.container}>
       <div className={style.button}>
         <i className="fas fa-arrow-left"></i>
-        <button onClick={() => history.push("/home")}>Back</button>
+        <button onClick={() => history.push("/react_default/home")}>
+          Back
+        </button>
       </div>
       <div className={style.wrapper}>
         <div className={style.flag}>
