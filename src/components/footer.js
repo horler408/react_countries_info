@@ -57,7 +57,7 @@ export default function footer() {
       </div>
       <p className={style.footer__bottom}>
         copyright &copy; <a href="https://github.com/horler408">HorlerTech</a>
-        <span id="date">2020</span>. All right reserved
+        <span id="date"> 2020</span>. All right reserved
       </p>
     </div>
   );
