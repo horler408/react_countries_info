@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+<img src="https://github.com/horler408/react_default/blob/master/src/components/assets/desktop-design-home-dark.jpg" />
+
 ## Available Scripts
 
 In the project directory, you can run:
